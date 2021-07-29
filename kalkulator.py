@@ -1,24 +1,24 @@
-print("Witaj w moim kalkulatorze.\nJakie działanie będziesz chciał przeprowadzać?")
+print("Witaj w kalkulatorze.\nJakie działanie chcesz przeprowadzić?")
 
 while(True):
-    znak = input("+ dodawanie, - odejmowanie, * mnożenie, / dzielenie, ** podnieś do potęgi, x zakończ ")
+    sign = input("+ dodawanie, - odejmowanie, * mnożenie, / dzielenie, ** podnieś do potęgi, x zakończ ")
 
-    if (znak == '+'):
+    if (sign == '+'):
         print(float(input("Wprowadź 1. liczbę: ")) + float(input("Wprowadź 2. liczbę: ")))
 
-    elif (znak == '-'):
+    elif (sign == '-'):
         print(float(input("Wprowadź 1. liczbę: ")) - float(input("Wprowadź 2. liczbę: ")))
 
-    elif (znak == '*'):
+    elif (sign == '*'):
         print(float(input("Wprowadź 1. liczbę: ")) * float(input("Wprowadź 2. liczbę: ")))
 
-    elif (znak == '/'):
+    elif (sign == '/'):
         print(float(input("Wprowadź 1. liczbę: ")) / float(input("Wprowadź 2. liczbę: ")))
 
-    elif (znak == '**'):
+    elif (sign == '**'):
         print(float(input("Wprowadź liczbę: ")) ** float(input("Do jakiej potęgi podnieść liczbę: ")))
 
-    elif (znak == 'x'):
+    elif (sign == 'x'):
         break
 
     else:
