@@ -1,13 +1,19 @@
-import random
+from random import choice
 
-how_many_char = int(input("Ile znaków ma mieć hasło?: "))
+print("Witaj w generatorze haseł.")
 
 sign = range(33, 127)
-passc = ("")
+passgen = ()
 
-#Pobieranie znaków z ASCII
+# Wprowadzam liczbę znaków do wygenerowania i zamieniam to w liczbę
 
-for i in range(how_many_char):
-    passc += chr(random.choice(sign))
+cnt_sign = input("Iluznakowe hasło chcesz wygenerować?: ")
 
-print("Wygenerowane hasło to: ", passc)
+# Pętla która ma wylosować ilość znaków wpisaną w poprzednim kroku
+
+for i in cnt_sign:
+    passgen += chr(choice(sign))
+
+
+print("Gotowe hasło to:")
+print(passgen)
